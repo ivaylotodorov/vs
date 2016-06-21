@@ -54,12 +54,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Settings.aiis" />
     <None Include="WebTest1.tstest" />
+    <None Include="WebTest2.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="WebTest1.resx">
       <DependentUpon>WebTest1.tstest</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WebTest2.resx" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -70,4 +77,9 @@
   </Target>
   -->
   <Import Project="$(MSBuildExtensionsPath)\Telerik\WebUITestStudio\Telerik.WebUITestStudio.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Name="TestStudioProject33" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
