@@ -181,7 +181,7 @@
     "ProjectGuid": "c376aa5b-1e3a-4295-9cff-ffe565b0fc88",
     "SourceControlRepository": null,
     "IsOnline": false,
-    "ProjectLanguage": 2,
+    "ProjectLanguage": 1,
     "ProjectReferences": [
       "System",
       "System.Core",
